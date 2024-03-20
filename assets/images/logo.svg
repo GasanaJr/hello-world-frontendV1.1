@@ -1,0 +1,10 @@
+<svg width="400" height="100" viewBox="0 0 400 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect width="400" height="100" rx="25" fill="url(#paint0_linear_23_5)"/>
+    <text x="50%" y="40%" dominant-baseline="middle" text-anchor="middle" fill="white" font-family="Arial" font-size="50" dy=".3em">HelloWorld</text>
+    <defs>
+        <linearGradient id="paint0_linear_23_5" x1="200" y1="0" x2="200" y2="100" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#2FB97D"/>
+            <stop offset="1" stop-color="#1AB69D"/>
+        </linearGradient>
+    </defs>
+</svg>

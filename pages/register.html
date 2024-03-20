@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--  Title -->
+    <title>HelloWorld | Sign Up</title>
+    <!--  Required Meta Tag -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="handheldfriendly" content="true" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="description" content="Mordenize" />
+    <meta name="author" content="" />
+    <meta name="keywords" content="Mordenize" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--  Favicon -->
+    <link rel="shortcut icon" href="../favicon.svg" type="image/svg+xml">
+    <!-- Core Css -->
+    <link  id="themeColors"  rel="stylesheet" href="./dist/css/style.min.css" />
+  </head>
+  <body style="background-color: #F5F2EB;">
+    <!-- Preloader -->
+    <div class="preloader">
+      <img src="../favicon.svg" alt="loader" class="lds-ripple img-fluid" />
+    </div>
+    <!-- Preloader -->
+    <div class="preloader">
+      <img src="../favicon.svg" alt="loader" class="lds-ripple img-fluid" />
+    </div>
+    <!--  Body Wrapper -->
+    <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-sidebartype="full" data-sidebar-position="fixed" data-header-position="fixed">
+      <div class="position-relative overflow-hidden radial-gradient min-vh-100 d-flex align-items-center justify-content-center">
+        <div class="d-flex align-items-center justify-content-center w-100">
+          <div class="row justify-content-center w-100">
+            <div class="col-md-8 col-lg-6 col-xxl-3">
+              <div class="card mb-0">
+                <div class="card-body">
+                  <!-- <a href="./index.html" class="text-nowrap logo-img text-center d-block mb-5 w-100">
+                    <img src="./dist/images/logos/dark-logo.svg" width="180" alt="">
+                  </a> -->
+                  <a href="../index.html" class="text-nowrap logo-img text-center d-block mb-5 w-100">
+                    <img src="../assets/images/logo.svg"  width="162" height="50" alt="HelloWorld logo">
+                  </a>
+                  <div class="row">
+                      <div class="col-6 mb-2 mb-sm-0">
+                        <a class="btn btn-white text-dark border fw-normal d-flex align-items-center justify-content-center rounded-2 py-8" href="javascript:void(0)" role="button">
+                          <img src="./dist/images/svgs/google-icon.svg" alt="" class="img-fluid me-2" width="18" height="18">
+                          <span class="d-none d-sm-block me-1 flex-shrink-0">Sign Up with</span>Google
+                        </a>
+                      </div>
+                      <div class="col-6">
+                        <a class="btn btn-white text-dark border fw-normal d-flex align-items-center justify-content-center rounded-2 py-8" href="javascript:void(0)" role="button">
+                          <img src="./dist/images/svgs/facebook-icon.svg" alt="" class="img-fluid me-2" width="18" height="18">
+                          <span class="d-none d-sm-block me-1 flex-shrink-0">Sign Up with</span>FB
+                        </a>
+                      </div>
+                    </div>
+                  <div class="position-relative text-center my-4">
+                    <p class="mb-0 fs-4 px-3 d-inline-block bg-white z-index-5 position-relative">or sign Up with</p>
+                    <span class="border-top w-100 position-absolute top-50 start-50 translate-middle"></span>
+                  </div>
+                  <form id="registrationForm">
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Name</label>
+                      <input type="text" class="form-control" id="name" aria-describedby="textHelp">
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-4">
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="password">
+                    </div> 
+                    <div class="mb-3">
+                        <label for="roleSelect" class="form-label">Role</label>
+                        <select class="form-select" id="roleSelect" aria-label="Role select">
+                            <option value="student">Student</option>
+                            <option value="instructor">Instructor</option>
+                        </select>
+                    </div>
+                    <div class="mb-3" style="display:none;" id="qualificationsContainer">
+                        <label for="inputQualifications" class="form-label">Qualifications</label>
+                        <input type="text" class="form-control" id="qualifications">
+                    </div>                       
+                    <a href="#" id="signbtn" class="btn w-100 py-8 mb-4 rounded-2" style="background-color: hsl(170, 75%, 41%); color: #fff; ">Sign Up</a>
+                    <div class="d-flex align-items-center">
+                      <p class="fs-4 mb-0 text-dark">Already have an Account?</p>
+                      <a class="text-primary fw-medium ms-2" href="./login.html">Sign In</a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!--  Import Js Files -->
+    <script src="./dist/libs/jquery/dist/jquery.min.js"></script>
+    <script src="./dist/libs/simplebar/dist/simplebar.min.js"></script>
+    <script src="./dist/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!--  core files -->
+    <script src="./dist/js/app.min.js"></script>
+    <script src="./dist/js/app.init.js"></script>
+    <script src="./dist/js/app-style-switcher.js"></script>
+    <script src="./dist/js/sidebarmenu.js"></script>
+    
+    <script src="./dist/js/custom.js"></script>
+    <script>
+        document.getElementById("roleSelect").addEventListener("change", (e) => {
+            var qualificationsContainer = document.getElementById("qualificationsContainer");
+            if(e.target.value == "instructor") {
+                qualificationsContainer.style.display = "";
+            }else {
+                qualificationsContainer.style.display = "none"
+            }
+        });
+
+        document.getElementById('signbtn').addEventListener('click', async() => {
+            var form = document.getElementById("registrationForm");
+            var qualifications = form.querySelector("#qualifications").value
+            var data = {
+                name: form.querySelector('#name').value,
+                email: form.querySelector('#email').value,
+                password: form.querySelector('#password').value,
+                role: form.querySelector("#roleSelect").value,   
+            }
+            if (qualifications) {
+                data.qualifications = qualifications;
+            }
+            await fetch('http://localhost:3000/user/register', {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(data)
+            }).then(async (response) => {
+               const result = await response.json()
+                if (response.status == 201) {
+                    Swal.fire({
+                    title: 'Success!',
+                    text: result.Message,
+                    icon: "success",
+                    confirmButtonText: 'OK'
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                     window.location.href = `./login.html`   
+                    }
+                })
+                }else {
+                    Swal.fire({
+                    title: 'Error!',
+                    text: result.Message,
+                    icon: "error",
+                })
+                }
+            })
+        })
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>

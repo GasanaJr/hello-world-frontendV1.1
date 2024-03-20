@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--  Title -->
+    <title>HelloWorld | Dashboard</title>
+    <!--  Required Meta Tag -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="handheldfriendly" content="true" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="description" content="Mordenize" />
+    <meta name="author" content="" />
+    <meta name="keywords" content="Mordenize" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--  Favicon -->
+    <link rel="shortcut icon" href="../favicon.svg" type="image/svg+xml">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="./dist/libs/owl.carousel/dist/assets/owl.carousel.min.css">
+    <!-- Core Css -->
+    <link  id="themeColors"  rel="stylesheet" href="./dist/css/style.min.css" />
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div class="preloader">
+      <img src="../favicon.svg" alt="loader" class="lds-ripple img-fluid" />
+    </div>
+    <!-- Preloader -->
+    <div class="preloader">
+      <img src="../favicon.svg" alt="loader" class="lds-ripple img-fluid" />
+    </div>
+    <!-- Body Wrapper -->
+    <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-sidebartype="full" data-sidebar-position="fixed" data-header-position="fixed">
+      <!-- Sidebar Start -->
+      <aside class="left-sidebar">
+        <!-- Sidebar scroll-->
+        <div>
+          <div class="brand-logo d-flex align-items-center justify-content-between">
+            <a href="#" class="text-nowrap logo-img">
+              <img src="../assets/images/logo.svg" class="dark-logo" width="180" alt="" />
+              <img src="../assets/images/logo.svg" class="light-logo"  width="180" alt="" />
+            </a>
+            <div class="close-btn d-lg-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
+              <i class="ti ti-x fs-8"></i>
+            </div>
+          </div>
+          <!-- Sidebar navigation-->
+          <nav class="sidebar-nav scroll-sidebar" data-simplebar>
+            <ul id="sidebarnav">
+              <!-- ============================= -->
+              <!-- Home -->
+              <!-- ============================= -->
+              <li class="nav-small-cap">
+                <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+                <span class="hide-menu">Home</span>
+              </li>
+              <!-- =================== -->
+              <!-- Dashboard -->
+              <!-- =================== -->
+              <li class="sidebar-item">
+                <a class="sidebar-link" href="./dashboard.html" aria-expanded="false">
+                  <span>
+                    <i class="ti ti-aperture"></i>
+                  </span>
+                  <span class="hide-menu">Dashboard</span>
+                </a>
+              </li>
+              <li class="sidebar-item">
+                <a class="sidebar-link" href="./courses.html" aria-expanded="false">
+                  <span>
+                    <i class="ti ti-aperture"></i>
+                  </span>
+                  <span class="hide-menu">Courses</span>
+                </a>
+              </li>
+              </ul>
+          </nav> 
+          <!-- End Sidebar navigation -->
+        </div>
+        <!-- End Sidebar scroll-->
+      </aside>
+      <!-- Sidebar End -->
+      <!-- Main wrapper -->
+      <div class="body-wrapper">
+        <!-- Header Start -->
+        <header class="app-header"> 
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link sidebartoggler nav-icon-hover ms-n3" id="headerCollapse" href="javascript:void(0)">
+                  <i class="ti ti-menu-2"></i>
+                </a>
+              </li>
+              <li class="nav-item d-none d-lg-block">
+                <a class="nav-link nav-icon-hover" href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <i class="ti ti-search"></i>
+                </a>
+              </li>
+            </ul>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+              <div class="d-flex align-items-center justify-content-between">
+                <a href="javascript:void(0)" class="nav-link d-flex d-lg-none align-items-center justify-content-center" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobilenavbar" aria-controls="offcanvasWithBothOptions">
+                  <i class="ti ti-align-justified fs-7"></i>
+                </a>
+                <ul class="navbar-nav flex-row ms-auto align-items-center justify-content-center">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link pe-0" href="javascript:void(0)" id="drop1" data-bs-toggle="dropdown" aria-expanded="false">
+                      <div class="d-flex align-items-center">
+                        <div class="user-profile-img">
+                          <img src="./dist/images/profile/user-1.jpg" class="rounded-circle" width="35" height="35" alt="" />
+                        </div>
+                      </div>
+                    </a>
+                    <div class="dropdown-menu content-dd dropdown-menu-end dropdown-menu-animate-up" aria-labelledby="drop1">
+                      <div class="profile-dropdown position-relative" data-simplebar>
+                        <div class="py-3 px-7 pb-0">
+                          <h5 class="mb-0 fs-5 fw-semibold">User Profile</h5>
+                        </div>
+                        <div class="d-flex align-items-center py-9 mx-7 border-bottom">
+                          <img src="./dist/images/profile/user-1.jpg" class="rounded-circle" width="80" height="80" alt="" />
+                          <div class="ms-3">
+                            <h5 class="mb-1 fs-3" id="profile-name"></h5>
+                            <span class="mb-1 d-block text-dark" id="role"></span>
+                            <p class="mb-0 d-flex text-dark align-items-center gap-2">
+                              <i class="ti ti-mail fs-4"></i> <span id="user-mail"></span>
+                            </p>
+                          </div>
+                        </div>
+                        <div class="message-body">
+                          <a href="./profile.html" class="py-8 px-7 mt-8 d-flex align-items-center">
+                            <span class="d-flex align-items-center justify-content-center bg-light rounded-1 p-6">
+                              <img src="./dist/images/svgs/icon-account.svg" alt="" width="24" height="24">
+                            </span>
+                            <div class="w-75 d-inline-block v-middle ps-3">
+                              <h6 class="mb-1 bg-hover-primary fw-semibold"> My Profile </h6>
+                              <span class="d-block text-dark">Account Settings</span>
+                            </div>
+                          </a>
+                        </div>
+                        <div class="d-grid py-4 px-7 pt-8">
+                          <div class="upgrade-plan bg-light-primary position-relative overflow-hidden rounded-4 p-4 mb-9">
+                          <a href="#" id="logout-btn" class="btn btn-outline-primary">Log Out</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </header>
+        <!-- Header End -->
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-8 d-flex align-items-stretch">
+              <div class="card w-100 bg-light-info overflow-hidden shadow-none">
+                <div class="card-body position-relative">
+                  <div class="row">
+                    <div class="col-sm-7">
+                      <div class="d-flex align-items-center mb-7">
+                        <div class="rounded-circle overflow-hidden me-6">
+                          <img src="./dist/images/profile/user-1.jpg" alt="" width="40" height="40">
+                        </div>
+                        <h5 class="fw-semibold mb-0 fs-5">Welcome back  <span id="user-name"></span></h5>
+                      </div>
+                    </div>
+                    <div class="col-sm-5">
+                      <div class="welcome-bg-img mb-n7 text-end">
+                        <img src="./dist/images/backgrounds/welcome-bg.svg" alt="" class="img-fluid">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-2 d-flex align-items-stretch">
+              <div class="card w-100">
+                <div class="card-body p-4">
+                  <h4 class="fw-semibold" id="numberOfCourses"></h4>
+                  <p class="mb-2 fs-3" id="first-card">Courses</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-2 d-flex align-items-stretch">
+              <div class="card w-100">
+                <div class="card-body p-4">
+                  <h4 class="fw-semibold" id="logged-user-role"></h4>
+                  <p class="mb-1 fs-3">Role</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-2 d-flex align-items-stretch" id="jobsCard">
+            </div>
+            <div class="col-sm-6 col-lg-2 d-flex align-items-stretch" id="studentsCard">
+            </div>
+            <div class="col-sm-6 col-lg-2 d-flex align-items-stretch" id="allUsersCard">
+            </div>
+
+            <div class="container my-5" id="progress-container">
+              <!-- Progress cards will be added here dynamically -->
+          </div>
+          
+            <h3 class="mt-5" id="first-header">Your Courses</h3>
+            <div id="course-container" class="row">
+            </div>
+            <div id="instructor-container" class="row">
+            </div>
+            <div id="job-container" class="row">
+            </div>
+            <h3 class="mt-5" id="assess-header" style="display: none;">Your Assessments</h3>
+            <div id="quiz-container" style="display: none;" class="row">
+
+            </div>
+          </div>
+        </div>
+        <!-- container-fluid over -->
+        <!-- Quiz Modal -->
+        <div class="modal fade" id="quizModal" tabindex="-1" aria-labelledby="quizModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="quizModalLabel">Quiz Title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <form id="quizForm">
+                <div class="modal-body">
+                  <!-- Quiz questions will be inserted here -->
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="submit" class="btn btn-primary">Submit Answers</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add Assessment Modal -->
+        <div class="modal fade" id="addAssessmentModal" tabindex="-1" aria-labelledby="addAssessmentModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="addAssessmentModalLabel">Add Assessment</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <form id="assessmentForm">
+                <div class="modal-body">
+                  <div class="form-group">
+                    <label for="quizTitle">Title</label>
+                    <input type="text" class="form-control" id="quizTitle" name="quizTitle" placeholder="Enter quiz title">
+                </div>
+                <div class="form-group">
+                    <label for="quizDescription">Description</label>
+                    <textarea class="form-control" id="quizDescription" name="quizDescription" rows="2" placeholder="Enter quiz description"></textarea>
+                </div>
+                  <div id="questionsContainer"></div>
+                  <button type="button" class="btn btn-primary my-2" id="addQuestion">Add Question</button>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="submit" class="btn btn-success">Save Assessment</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add job Modal -->
+          <div class="modal fade" id="addJobModal" tabindex="-1" aria-labelledby="addJobModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="addJobModalLabel">Add Job</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <form id="addJobForm">
+                  <div class="modal-body">
+                    <div class="form-group">
+                      <label for="jobTitle">Title</label>
+                      <input type="text" class="form-control" id="jobTitle" name="title" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="jobDescription">Description</label>
+                      <textarea class="form-control" id="jobDescription" name="description" rows="3" required></textarea>
+                    </div>
+                    <div class="form-group">
+                      <label for="jobSkills">Required Skills</label>
+                      <input type="text" class="form-control" id="jobSkills" name="requiredSkills" placeholder="Enter skills separated by commas (e.g., JavaScript, Python, Java)">
+                  </div>
+                  <div class="form-group">
+                    <label for="jobLink">Application Link</label>
+                    <input type="text" class="form-control" id="jobLink" name="Link" placeholder="Enter the application link">
+                </div>
+                                  
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal" id="closeJob">Close</button>
+                    <button type="submit" class="btn btn-primary">Save Job</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+
+
+      </div>
+    </div>
+  <!-- Customizer -->
+   <button class="btn btn-primary p-3 rounded-circle d-flex align-items-center justify-content-center customizer-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+    <i class="ti ti-settings fs-7" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Settings"></i>
+  </button>
+  <div class="offcanvas offcanvas-end customizer" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" data-simplebar="">
+    <div class="d-flex align-items-center justify-content-between p-3 border-bottom">
+      <h4 class="offcanvas-title fw-semibold" id="offcanvasExampleLabel">Settings</h4>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body p-4">
+      <div class="theme-option pb-4">
+        <h6 class="fw-semibold fs-4 mb-1">Theme Option</h6>
+        <div class="d-flex align-items-center gap-3 my-3">
+          <a href="javascript:void(0)"  onclick="toggleTheme('./dist/css/style.min.css')"  class="rounded-2 p-9 customizer-box hover-img d-flex align-items-center gap-2 light-theme text-dark">
+            <i class="ti ti-brightness-up fs-7 text-primary"></i>
+            <span class="text-dark">Light</span>
+          </a>
+          <a href="javascript:void(0)" onclick="toggleTheme('./dist/css/style-dark.min.css')" class="rounded-2 p-9 customizer-box hover-img d-flex align-items-center gap-2 dark-theme text-dark">
+            <i class="ti ti-moon fs-7 "></i>
+            <span class="text-dark">Dark</span>
+          </a>
+        </div>
+      </div>
+      <div class="theme-direction pb-4">
+        <h6 class="fw-semibold fs-4 mb-1">Theme Direction</h6>
+        <div class="d-flex align-items-center gap-3 my-3">
+          <a href="./index.html" class="rounded-2 p-9 customizer-box hover-img d-flex align-items-center gap-2">
+            <i class="ti ti-text-direction-ltr fs-6 text-primary"></i>
+            <span class="text-dark">LTR</span>
+          </a>
+          <a href="../rtl/index.html" class="rounded-2 p-9 customizer-box hover-img d-flex align-items-center gap-2">
+            <i class="ti ti-text-direction-rtl fs-6 text-dark"></i>
+            <span class="text-dark">RTL</span>
+          </a>
+        </div>
+      </div>
+      <div class="theme-colors pb-4">
+        <h6 class="fw-semibold fs-4 mb-1">Theme Colors</h6>
+        <div class="d-flex align-items-center gap-3 my-3">
+          <ul class="list-unstyled mb-0 d-flex gap-3 flex-wrap change-colors">
+            <li class="rounded-2 p-9 customizer-box hover-img d-flex align-items-center justify-content-center">
+              <a href="javascript:void(0)" class="rounded-circle position-relative d-block customizer-bgcolor skin1-bluetheme-primary active-theme " onclick="toggleTheme('./dist/css/style.min.css')"  data-color="blue_theme" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="BLUE_THEME"><i class="ti ti-check text-white d-flex align-items-center justify-content-center fs-5"></i></a>
+            </li>
+            <li class="rounded-2 p-9 customizer-box hover-img d-flex align-items-center justify-content-center">
+              <a href="javascript:void(0)"  class="rounded-circle position-relative d-block customizer-bgcolor skin2-aquatheme-primary " onclick="toggleTheme('./dist/css/style-aqua.min.css')"  data-color="aqua_theme" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="AQUA_THEME"><i class="ti ti-check  text-white d-flex align-items-center justify-content-center fs-5"></i></a>
+            </li>
+            <li class="rounded-2 p-9 customizer-box hover-img d-flex align-items-center justify-content-center">
+              <a href="javascript:void(0)" class="rounded-circle position-relative d-block customizer-bgcolor skin3-purpletheme-primary" onclick="toggleTheme('./dist/css/style-purple.min.css')"  data-color="purple_theme" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="PURPLE_THEME"><i class="ti ti-check  text-white d-flex align-items-center justify-content-center fs-5"></i></a>
+            </li>
+            <li class="rounded-2 p-9 customizer-box hover-img d-flex align-items-center justify-content-center">
+              <a href="javascript:void(0)" class="rounded-circle position-relative d-block customizer-bgcolor skin4-greentheme-primary" onclick="toggleTheme('./dist/css/style-green.min.css')"  data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="GREEN_THEME"><i class="ti ti-check  text-white d-flex align-items-center justify-content-center fs-5"></i></a>
+            </li>
+            <li class="rounded-2 p-9 customizer-box hover-img d-flex align-items-center justify-content-center">
+              <a href="javascript:void(0)" class="rounded-circle position-relative d-block customizer-bgcolor skin5-cyantheme-primary" onclick="toggleTheme('./dist/css/style-cyan.min.css')"  data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="CYAN_THEME"><i class="ti ti-check  text-white d-flex align-items-center justify-content-center fs-5"></i></a>
+            </li>
+            <li class="rounded-2 p-9 customizer-box hover-img d-flex align-items-center justify-content-center">
+              <a href="javascript:void(0)" class="rounded-circle position-relative d-block customizer-bgcolor skin6-orangetheme-primary" onclick="toggleTheme('./dist/css/style-orange.min.css')"  data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="ORANGE_THEME"><i class="ti ti-check  text-white d-flex align-items-center justify-content-center fs-5"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="layout-type pb-4">
+        <h6 class="fw-semibold fs-4 mb-1">Layout Type</h6>
+        <div class="d-flex align-items-center gap-3 my-3">
+          <a href="./index.html" class="rounded-2 p-9 customizer-box hover-img d-flex align-items-center gap-2">              
+            <i class="ti ti-layout-sidebar fs-6 text-primary"></i>
+            <span class="text-dark">Vertical</span>
+          </a>
+          <a href="../horizontal/index.html" class="rounded-2 p-9 customizer-box hover-img d-flex align-items-center gap-2">
+            <i class="ti ti-layout-navbar fs-6 text-dark"></i>
+            <span class="text-dark">Horizontal</span>
+          </a>
+        </div>
+      </div>
+      <div class="container-option pb-4">
+        <h6 class="fw-semibold fs-4 mb-1">Container Option</h6>
+        <div class="d-flex align-items-center gap-3 my-3">
+          <a href="javascript:void(0)" class="rounded-2 p-9 customizer-box hover-img d-flex align-items-center gap-2 boxed-width text-dark">              
+            <i class="ti ti-layout-distribute-vertical fs-7 text-primary"></i>
+            <span class="text-dark">Boxed</span>
+          </a>
+          <a href="javascript:void(0)" class="rounded-2 p-9 customizer-box hover-img d-flex align-items-center gap-2 full-width text-dark">
+            <i class="ti ti-layout-distribute-horizontal fs-7"></i>
+            <span class="text-dark">Full</span>
+          </a>
+        </div>
+      </div>
+      <div class="sidebar-type pb-4">
+        <h6 class="fw-semibold fs-4 mb-1">Sidebar Type</h6>
+        <div class="d-flex align-items-center gap-3 my-3">
+          <a  href="javascript:void(0)" class="rounded-2 p-9 customizer-box hover-img d-flex align-items-center gap-2 fullsidebar">              
+            <i class="ti ti-layout-sidebar-right fs-7"></i>
+            <span class="text-dark">Full</span>
+          </a>
+          <a  href="javascript:void(0)" class="rounded-2 p-9 customizer-box hover-img d-flex align-items-center text-dark sidebartoggler gap-2">
+            <i class="ti ti-layout-sidebar fs-7"></i>
+            <span class="text-dark">Collapse</span>
+          </a>
+        </div>
+      </div>
+      <div class="card-with pb-4">
+        <h6 class="fw-semibold fs-4 mb-1">Card With</h6>
+        <div class="d-flex align-items-center gap-3 my-3">
+          <a href="javascript:void(0)" class="rounded-2 p-9 customizer-box hover-img d-flex align-items-center gap-2 text-dark cardborder">              
+            <i class="ti ti-border-outer fs-7"></i>
+            <span class="text-dark">Border</span>
+          </a>
+          <a href="javascript:void(0)" class="rounded-2 p-9 customizer-box hover-img d-flex align-items-center gap-2 cardshadow">
+            <i class="ti ti-border-none fs-7"></i>
+            <span class="text-dark">Shadow</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+        <!-- Customizer -->
+    <!-- Import Js Files -->
+    <script src="./dist/libs/jquery/dist/jquery.min.js"></script>
+    <script src="./dist/libs/simplebar/dist/simplebar.min.js"></script>
+    <script src="./dist/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- core files -->
+    <script src="./dist/js/app.min.js"></script>
+    <script src="./dist/js/app.init.js"></script>
+    <script src="./dist/js/app-style-switcher.js"></script>
+    <script src="./dist/js/sidebarmenu.js"></script>
+    <script src="./dist/js/custom.js"></script>
+    <!-- current page js files -->
+    <script src="./dist/js/dashboard2.js"></script>
+    <script>
+      const user = JSON.parse(localStorage.getItem('user'));
+      const nav = document.getElementById('sidebarnav');
+      // Log out logic
+      document.getElementById('logout-btn').addEventListener('click', () => {
+        localStorage.removeItem('user');
+        localStorage.removeItem('token');
+        window.location.href = `./login.html`
+      })
+      const userId = user._id;
+      const populateData = () => {
+      const username = user.name;
+      document.getElementById('user-name').innerText = username + '!';
+      document.getElementById('profile-name').innerText = username;
+      document.getElementById('role').innerText = user.role;
+      document.getElementById('user-mail').innerText = user.email;
+      document.getElementById('logged-user-role').innerText = user.role;
+      document.getElementById('logged-user-role').style= "text-transform: capitalize";
+      }
+      const courseContainer = document.getElementById('course-container');
+
+      // Add Dom loaded event
+      document.addEventListener('DOMContentLoaded', async() => {
+        populateData()
+        // Dynamic nav
+        if (user.role == 'admin') {
+          fetchUsers();
+          getJobs();
+          document.getElementById('first-header').style.display = "none";
+          document.getElementById('first-card').innerText = "All Users";
+          document.getElementById('jobsCard').innerHTML = `
+              <div class="card w-100">
+                <div class="card-body p-4">
+                  <h4 class="fw-semibold" id="numberOfJobs"></h4>
+                  <p class="mb-1 fs-3">Jobs</p>
+                </div>
+              </div>
+          `
+          document.getElementById('studentsCard').innerHTML = `
+              <div class="card w-100">
+                <div class="card-body p-4">
+                  <h4 class="fw-semibold" id="numberOfStudents"></h4>
+                  <p class="mb-1 fs-3">Students</p>
+                </div>
+              </div>
+          `
+          document.getElementById('allUsersCard').innerHTML = `
+          <div class="card w-100">
+                <div class="card-body p-4">
+                  <h4 class="fw-semibold" id="numberOfUsers"></h4>
+                  <p class="mb-1 fs-3">Instructors</p>
+                </div>
+              </div>
+          `
+          const userContainer = document.getElementById("course-container");
+          const instructorContainer = document.getElementById('instructor-container');
+          const jobContainer = document.getElementById('job-container');
+          userContainer.classList.add(['card']);
+          instructorContainer.classList.add(['card']);
+          jobContainer.classList.add(['card']);
+          userContainer.innerHTML = `
+          <h3 class="mt-5">All Students</h3>
+          <table class="table fs-4">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Email</th>
+              </tr>
+            </thead>
+            <tbody id="tbody">
+            </tbody>
+          </table>
+          `;
+        instructorContainer.innerHTML = `
+        <h3 class="mt-5">All Instructors</h3>
+        <table class="table fs-4">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Status</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="tbody1">
+            </tbody>
+          </table>
+        `
+        jobContainer.innerHTML = `
+        <div class="d-flex justify-content-between">
+          <h3 class="mt-5">All Jobs</h3>
+          <button class="btn btn-primary mt-4" data-toggle="modal" data-target="#addJobModal" id = "jobBtn">Add Job</button>
+        </div>
+        <table class="table fs-4">
+            <thead>
+              <tr>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Applicants</th>
+              </tr>
+            </thead>
+            <tbody id="tbody2">
+            </tbody>
+          </table>
+        `
+        }
+        if (user.role == 'instructor') {
+          document.getElementById('numberOfCourses').innerText = user.courses.length;
+        nav.innerHTML += `
+            <li class="sidebar-item">
+                <a class="sidebar-link" href="./add.html" aria-expanded="false">
+                  <span>
+                    <i class="ti ti-aperture"></i>
+                  </span>
+                  <span class="hide-menu">Add Course</span>
+                </a>
+              </li>
+        `
+        for (const course of user.courses) {
+        try {
+            const courseResponse = await fetch(`http://localhost:3000/courses/course/${course}`);
+            const courseResult = await courseResponse.json();
+            if (courseResponse.ok) {
+                const course = courseResult.course;
+                const cardHtml = `
+                <div class="col-md-5 col-lg-5">
+                <div class="card rounded-2 overflow-hidden hover-img" data-course-id="${course._id}">
+                  <div class="position-relative">
+                    <a href="${course.link}" target="_blank"><img src="./dist/images/blog/blog-img6.jpg" class="card-img-top rounded-0" alt="Course image"></a>
+                    <img src="./dist/images/profile/user-1.jpg" alt="" class="img-fluid rounded-circle position-absolute bottom-0 start-0 mb-n9 ms-9" width="40" height="40" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Instructor Name">
+                  </div>
+                  <div class="card-body p-4">
+                    <a class="d-block my-4 fs-5 text-dark fw-semibold" href="${course.link}" target="_blank">${course.title}</a>
+                    <p>${course.description}</p>
+                    <div class="d-flex align-items-center gap-4">
+                      <div class="d-flex align-items-center gap-2"><i class="ti ti-eye text-dark fs-5"></i>9,125</div>
+                      <div class="d-flex align-items-center fs-2 ms-auto"><i class="ti ti-point text-dark"></i>Mon, Jan 16</div>
+                    </div>
+                    <div class="d-flex justify-content-around">
+                      <button class='btn btn-success m-3 fw-bold fs-4 take-quiz'>View Assessment</button>
+                      <button class='btn btn-success m-3 fw-bold fs-4 add-assessment'>Add Assessment</button>
+                    </div>
+                  </div>
+                </div>
+                </div>`;
+                courseContainer.innerHTML += cardHtml;
+            } else {
+                console.error('Failed to fetch course:', courseResult.Message);
+            }
+           } catch (error) {
+            console.error('Error fetching course:', error);
+        }
+    }
+      }
+      if (user.role == 'student') {
+        fetchAndDisplayUserProgress(userId);
+        const response = await fetch(`http://localhost:3000/courses/user-courses/${userId}`);
+        const result = await response.json();
+        document.getElementById('numberOfCourses').innerText = result.Courses.length;
+        for (const course of result.Courses) {
+        try {
+            const courseResponse = await fetch(`http://localhost:3000/courses/course/${course}`);
+            const courseResult = await courseResponse.json();
+            if (courseResponse.ok) {
+                const course = courseResult.course;
+                const cardHtml = `
+                <div class="col-md-6 col-lg-4">
+                <div class="card rounded-2 overflow-hidden hover-img" data-course-id="${course._id}">
+                  <div class="position-relative">
+                    <a href="${course.link}" target="_blank"><img src="./dist/images/blog/blog-img6.jpg" class="card-img-top rounded-0" alt="Course image"></a>
+                    <img src="./dist/images/profile/user-1.jpg" alt="" class="img-fluid rounded-circle position-absolute bottom-0 start-0 mb-n9 ms-9" width="40" height="40" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Instructor Name">
+                  </div>
+                  <div class="card-body p-4">
+                    <a class="d-block my-4 fs-5 text-dark fw-semibold" href="${course.link}" target="_blank">${course.title}</a>
+                    <p>${course.description}</p>
+                    <div class="d-flex align-items-center gap-4">
+                      <div class="d-flex align-items-center gap-2"><i class="ti ti-eye text-dark fs-5"></i>9,125</div>
+                      <div class="d-flex align-items-center fs-2 ms-auto"><i class="ti ti-point text-dark"></i>Mon, Jan 16</div>
+                    </div>
+                    <button class='btn btn-success mt-3 fw-bold fs-4 take-quiz'>View Assessment</button>
+                  </div>
+                </div>
+                </div>`;
+                courseContainer.innerHTML += cardHtml;
+            } else {
+                console.error('Failed to fetch course:', courseResult.Message);
+            }
+           } catch (error) {
+            console.error('Error fetching course:', error);
+        }
+    }
+  }
+  })
+  document.addEventListener('DOMContentLoaded', () => {
+    const container = document.getElementById('course-container');
+    const quizContainer = document.getElementById('quiz-container');
+    container.addEventListener('click', async(e) => {
+      if(e.target && e.target.matches('.take-quiz')) {
+        const courseCard = e.target.closest('[data-course-id]');
+        if (courseCard) {
+          const courseId = courseCard.getAttribute('data-course-id');
+          await fetch(`http://localhost:3000/quizzes/quiz/${courseId}`).then(async response => {
+            const result = await response.json();
+            if (response.status == 404) {
+              Swal.fire({
+                title: "Message",
+                icon: "info",
+                text: result.message
+              })
+            }else if (response.ok) {
+              for (const quiz of result.message) {
+                const quizElement = document.createElement('div');
+                quizElement.classList.add('card', 'mb-3');
+                quizElement.innerHTML = `
+                    <div class="card-header">Assessment</div>
+                    <div class="card-body">
+                        <h5 class="card-title">${quiz.title}</h5>
+                        <p class="card-text">${quiz.description}</p>
+                        <button class="btn btn-success" onclick="takeQuiz('${quiz._id}')">Take Quiz</button>
+                    </div>
+                `;
+                quizContainer.appendChild(quizElement);
+              }
+              quizContainer.style.display = 'block';
+              document.getElementById('assess-header').style.display="block";
+              Swal.fire({
+                title: "Success",
+                icon: "success",
+                text: "Assessments Loaded Successfully"
+              })
+            }
+          })
+        }
+      }
+    })
+  })
+  const takeQuiz = async(quizId) => {
+    localStorage.setItem('quizId', quizId)
+    try {
+        const response = await fetch(`http://localhost:3000/quizzes/get-quiz/${quizId}`);
+        const data = await response.json();
+        const quiz = data.Message;
+
+        // Populate the modal with quiz data
+        const modalTitle = document.getElementById('quizModalLabel');
+        const modalBody = document.querySelector('#quizModal .modal-body');
+        
+        // Reset modal content
+        modalBody.innerHTML = '';
+
+        // Set the quiz title
+        modalTitle.textContent = `${quiz.title}`;
+
+        // Add questions to the modal body
+        quiz.questions.forEach((question, index) => {
+            const questionElement = document.createElement('div');
+            questionElement.innerHTML = `
+                <p><strong>Q${index + 1}: ${question.questionText}</strong></p>
+                ${question.options.map((option, i) => `
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="question${index}" id="option${index}_${i}" value="${i}">
+                      <label class="form-check-label" for="option${index}_${i}">
+                        ${option}
+                      </label>
+                    </div>
+                `).join('')}
+            `;
+            modalBody.appendChild(questionElement);
+        });
+
+        // Show the modal
+        $('#quizModal').modal('show');
+
+    } catch (error) {
+        console.error('Error fetching the quiz:', error);
+    }
+  }
+
+  document.getElementById('quizForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const quizId = localStorage.getItem('quizId')
+    const userId = user._id; 
+    const formData = new FormData(e.target);
+    const answers = {};
+    formData.forEach((value, key) => {
+        answers[key.replace('question', '')] = parseInt(value);
+    });
+    // Send answers to the server
+    try {
+        const response = await fetch('http://localhost:3000/quizzes/submit-quiz', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ userId, quizId, answers }),
+        });
+
+        const data = await response.json();
+
+        if (response.ok) {
+            console.log('Quiz submitted successfully:', data);
+            Swal.fire({
+              title: 'Success',
+              icon: 'success',
+              text: `${data.message}! Your score: ${data.score}`
+            })
+        } else {
+            throw new Error(data.message || 'Failed to submit quiz');
+        }
+    } catch (error) {
+        console.error('Error submitting quiz:', error);
+    }
+    e.target.reset();
+    $('#quizModal').modal('hide');
+});
+
+async function fetchAndDisplayUserProgress(userId) {
+    try {
+        const response = await fetch(`http://localhost:3000/quizzes/progress/${userId}`);
+        const progressData = await response.json();
+
+        const container = document.getElementById('progress-container');
+        container.innerHTML = ''; // Clear previous content
+
+        progressData.forEach(progress => {
+            const cardHtml = `
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">${progress.courseId.title}</h5>
+                        <p class="card-text">Quizzes Taken: ${progress.quizzesTaken.length}</p>
+                        <ul class="list-group list-group-flush">
+                            ${progress.quizzesTaken.map(quiz => `
+                                <li class="list-group-item">Quiz: ${quiz.quizId.title} - Score: ${quiz.score} out of ${quiz.quizId.maxScore}</li>
+                            `).join('')}
+                        </ul>
+                    </div>
+                </div>
+            `;
+            container.innerHTML += cardHtml;
+        });
+
+        if (progressData.length === 0) {
+            container.innerHTML = `
+                <div class="card mb-3">
+                    <div class="card-body">
+                      <h5>You haven't taken any Quizzes Yet!</h5>
+                    </div>
+                </div>
+            `;;
+        }
+    } catch (error) {
+        console.error('Error fetching user progress:', error);
+        document.getElementById('progress-container').innerHTML = '<p>Error fetching progress data.</p>';
+    }
+}
+
+  // Add assessmemt modal
+// Assuming 'courseContainer' is the parent that exists at initial load
+document.getElementById('course-container').addEventListener('click', function(event) {
+    if (event.target.classList.contains('add-assessment')) {
+      const quizCard = event.target.closest('[data-course-id]');
+      if (quizCard) {
+        const CourseId = quizCard.getAttribute('data-course-id');
+        localStorage.setItem('courseid', CourseId);
+      }
+        $('#addAssessmentModal').modal('show');
+    }
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('addQuestion').addEventListener('click', addQuestionToModal);
+    document.getElementById('assessmentForm').addEventListener('submit', submitAssessment);
+});
+
+
+function addQuestionToModal() {
+    const container = document.getElementById('questionsContainer');
+    const questionNumber = container.children.length + 1;
+    const questionHtml = `
+        <div class="question-block mb-3">
+            <label for="questionText${questionNumber}">Question ${questionNumber}</label>
+            <input type="text" class="form-control mb-2" id="questionText${questionNumber}" name="questionText${questionNumber}" placeholder="Enter question text">
+            <input type="text" class="form-control mb-2" name="option1_${questionNumber}" placeholder="Option 1">
+            <input type="text" class="form-control mb-2" name="option2_${questionNumber}" placeholder="Option 2">
+            <input type="text" class="form-control mb-2" name="option3_${questionNumber}" placeholder="Option 3">
+            <label for="correctOption${questionNumber}">Correct Option Number</label>
+            <input type="number" class="form-control" id="correctOption${questionNumber}" name="correctOption${questionNumber}" min="1" max="3" placeholder="1, 2, or 3">
+        </div>
+    `;
+    container.innerHTML += questionHtml;
+}
+
+  async function submitAssessment(e) {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+    const courseId = localStorage.getItem('courseid');// 
+    const title = formData.get('quizTitle');
+    const description = formData.get('quizDescription');
+    const questions = [];
+
+    // Iterate over formData to build questions array
+    formData.forEach((value, key) => {
+        const questionMatch = key.match(/questionText(\d+)/);
+        const optionMatch = key.match(/option(\d+)_(\d+)/);
+        const correctOptionMatch = key.match(/correctOption(\d+)/);
+
+        if (questionMatch) {
+            const questionIndex = parseInt(questionMatch[1], 10) - 1;
+            questions[questionIndex] = questions[questionIndex] || { options: [] };
+            questions[questionIndex].questionText = value;
+        } else if (optionMatch) {
+            const [, optionIndex, questionIndex] = optionMatch.map(Number);
+            questions[questionIndex - 1] = questions[questionIndex - 1] || { options: [] };
+            questions[questionIndex - 1].options[optionIndex - 1] = value;
+        } else if (correctOptionMatch) {
+            const questionIndex = parseInt(correctOptionMatch[1], 10) - 1;
+            questions[questionIndex].correctOption = parseInt(value, 10) - 1; // Assuming 0-based index for correctOption
+        }
+    });
+
+    const payload = {
+        courseId,
+        title,
+        description,
+        questions
+    };
+
+    // Submit payload to your backend
+    try {
+        const response = await fetch('http://localhost:3000/quizzes/quiz', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(payload)
+        });
+
+        const responseData = await response.json();
+
+        if (response.ok) {
+            console.log('Quiz submitted successfully:', responseData);
+            Swal.fire({
+              title: 'Success',
+              icon: 'success',
+              text: responseData.Message
+            });
+            $('#addAssessmentModal').modal('hide');
+        } else {
+          Swal.fire({
+              title: 'Success',
+              icon: 'success',
+              text: responseData.Message
+            });
+        }
+    } catch (error) {
+        console.error('Error submitting quiz:', error);
+    }
+}
+
+// Fetching All Users
+
+  const fetchUsers = async () => {
+    await fetch('http://localhost:3000/user/users').then(async(response) => {
+      const result = await response.json();
+      const table = document.getElementById('tbody');
+      const table1 = document.getElementById('tbody1');
+      document.getElementById('numberOfCourses').innerText = result.Users.length + result.Instructors.length;
+      document.getElementById('numberOfStudents').innerText = result.Users.length;
+      document.getElementById('numberOfUsers').innerText = result.Instructors.length;
+      result.Users.forEach((user) => {
+        const row = document.createElement("tr");
+        row.innerHTML = 
+        `<td>${user.name}</td>
+         <td>${user.email}</td>
+        `
+        table.appendChild(row);
+      });
+      result.Instructors.forEach((user) => {
+        const row = document.createElement("tr");
+        const text = user.isApproved ? 'Deactivate' : 'Activate';
+
+        // Create status span
+        const statusSpan = document.createElement("span");
+        statusSpan.className = user.isApproved ? "badge rounded-pill bg-success" : "badge rounded-pill bg-warning text-dark";
+        statusSpan.textContent = user.isApproved ? "Active" : "Inactive";
+
+        // Append cells to row
+        row.innerHTML = 
+        `<td>${user.name}</td>
+        <td>${user.email}</td>
+        <td></td>
+        <td>
+          <button class="btn btn-primary" onclick="Approve('${user._id}')">${text}</button>
+        </td>`;
+
+        // Append statusSpan to the correct cell
+        row.cells[2].appendChild(statusSpan);
+
+        table1.appendChild(row);
+      });
+    });
+  }
+
+  const Approve = async(id) => {
+    await fetch(`http://localhost:3000/user/instructors/approve/${id}`, {
+      method: "POST"
+    }).then(async (response) => {
+               const result = await response.json()
+               console.log(result)
+                if (response.status == 200) {
+                    Swal.fire({
+                    title: 'Success!',
+                    text: result.message,
+                    icon: "success",
+                    confirmButtonText: 'OK'
+                }).then(() => {
+                  window.location.reload();
+                })
+              }
+                else {
+                    Swal.fire({
+                    title: 'Error!',
+                    text: result.message,
+                    icon: "error",
+                })
+                }
+            })
+  }
+
+  const getJobs = async() => {
+    await fetch('http://localhost:3000/user/job-listings').then(async (response) => {
+      const result = await response.json();
+      document.getElementById('numberOfJobs').innerText = result.Message.length;
+      const table = document.getElementById('tbody2');
+      result.Message.forEach((job) => {
+        const matchingUsers = job.matchingUsers.join("<br>")
+        const row = document.createElement('tr');
+        row.innerHTML = 
+        `
+        <td>${job.title}</td>
+        <td>${job.description}</td>
+        <td>${matchingUsers}</td>
+        `
+        table.appendChild(row);
+      })
+    })
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('jobBtn').addEventListener('click', () => {
+    $('#addJobModal').modal('show');
+  })
+  document.getElementById('closeJob').addEventListener('click', () => {
+    $('#addJobModal').modal('hide');
+  })
+  })
+
+  document.getElementById('addJobForm').addEventListener('submit', async(e) => {
+    e.preventDefault();
+    const skillsString = document.getElementById('jobSkills').value;
+    const requiredSkills = skillsString.split(',').map(skill => skill.trim());
+    const formData = {
+      title: document.getElementById('jobTitle').value,
+      description: document.getElementById('jobDescription').value,
+      requiredSkills: requiredSkills,
+      link: document.getElementById('jobLink').value
+    };
+    await fetch('http://localhost:3000/user/job-listings', {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(formData)
+    }).then(async (response) => {
+      const result = await response.json();
+      if (response.status == 201) {
+                    Swal.fire({
+                    title: 'Success!',
+                    text: result.message,
+                    icon: "success",
+                    confirmButtonText: 'OK'
+                }).then(() => {
+                  window.location.reload();
+                })
+                }else {
+                    Swal.fire({
+                    title: 'Error!',
+                    text: result.message,
+                    icon: "error",
+                })
+                }
+      
+    })
+  })
+
+
+
+
+
+
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>

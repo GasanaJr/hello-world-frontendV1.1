@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--  Title -->
+    <title>HelloWorld | Add Course</title>
+    <!--  Required Meta Tag -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="handheldfriendly" content="true" />
+    <meta name="MobileOptimized" content="width" />
+    <meta name="description" content="Mordenize" />
+    <meta name="author" content="" />
+    <meta name="keywords" content="Mordenize" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!--  Favicon -->
+    <link rel="shortcut icon" href="../favicon.svg" type="image/svg+xml">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="./dist/libs/owl.carousel/dist/assets/owl.carousel.min.css">
+    <!-- Core Css -->
+    <link  id="themeColors"  rel="stylesheet" href="./dist/css/style.min.css" />
+  </head>
+  <body>
+    <!-- Preloader -->
+    <div class="preloader">
+      <img src="../favicon.svg" alt="loader" class="lds-ripple img-fluid" />
+    </div>
+    <!-- Preloader -->
+    <div class="preloader">
+      <img src="../favicon.svg" alt="loader" class="lds-ripple img-fluid" />
+    </div>
+    <!-- Body Wrapper -->
+    <div class="page-wrapper" id="main-wrapper" data-layout="vertical" data-sidebartype="full" data-sidebar-position="fixed" data-header-position="fixed">
+      <!-- Sidebar Start -->
+      <aside class="left-sidebar">
+        <!-- Sidebar scroll-->
+        <div>
+          <div class="brand-logo d-flex align-items-center justify-content-between">
+            <a href="#" class="text-nowrap logo-img">
+              <img src="../assets/images/logo.svg" class="dark-logo" width="180" alt="" />
+              <img src="../assets/images/logo.svg" class="light-logo"  width="180" alt="" />
+            </a>
+            <div class="close-btn d-lg-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
+              <i class="ti ti-x fs-8"></i>
+            </div>
+          </div>
+          <!-- Sidebar navigation-->
+          <nav class="sidebar-nav scroll-sidebar" data-simplebar>
+            <ul id="sidebarnav">
+              <!-- ============================= -->
+              <!-- Home -->
+              <!-- ============================= -->
+              <li class="nav-small-cap">
+                <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
+                <span class="hide-menu">Home</span>
+              </li>
+              <!-- =================== -->
+              <!-- Dashboard -->
+              <!-- =================== -->
+              <li class="sidebar-item">
+                <a class="sidebar-link" href="./dashboard.html" aria-expanded="false">
+                  <span>
+                    <i class="ti ti-aperture"></i>
+                  </span>
+                  <span class="hide-menu">Dashboard</span>
+                </a>
+              </li>
+              <li class="sidebar-item">
+                <a class="sidebar-link" href="./courses.html" aria-expanded="false">
+                  <span>
+                    <i class="ti ti-aperture"></i>
+                  </span>
+                  <span class="hide-menu">Courses</span>
+                </a>
+              </li>
+              </ul>
+          </nav> 
+          <!-- End Sidebar navigation -->
+        </div>
+        <!-- End Sidebar scroll-->
+      </aside>
+      <!-- Sidebar End -->
+      <!-- Main wrapper -->
+      <div class="body-wrapper">
+        <!-- Header Start -->
+        <header class="app-header"> 
+            <nav class="navbar navbar-expand-lg navbar-light">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link sidebartoggler nav-icon-hover ms-n3" id="headerCollapse" href="javascript:void(0)">
+                    <i class="ti ti-menu-2"></i>
+                  </a>
+                </li>
+                <li class="nav-item d-none d-lg-block">
+                  <a class="nav-link nav-icon-hover" href="javascript:void(0)" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <i class="ti ti-search"></i>
+                  </a>
+                </li>
+              </ul>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <div class="d-flex align-items-center justify-content-between">
+                  <a href="javascript:void(0)" class="nav-link d-flex d-lg-none align-items-center justify-content-center" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobilenavbar" aria-controls="offcanvasWithBothOptions">
+                    <i class="ti ti-align-justified fs-7"></i>
+                  </a>
+                  <ul class="navbar-nav flex-row ms-auto align-items-center justify-content-center">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link pe-0" href="javascript:void(0)" id="drop1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <div class="d-flex align-items-center">
+                          <div class="user-profile-img">
+                            <img src="./dist/images/profile/user-1.jpg" class="rounded-circle" width="35" height="35" alt="" />
+                          </div>
+                        </div>
+                      </a>
+                      <div class="dropdown-menu content-dd dropdown-menu-end dropdown-menu-animate-up" aria-labelledby="drop1">
+                        <div class="profile-dropdown position-relative" data-simplebar>
+                          <div class="py-3 px-7 pb-0">
+                            <h5 class="mb-0 fs-5 fw-semibold">User Profile</h5>
+                          </div>
+                          <div class="d-flex align-items-center py-9 mx-7 border-bottom">
+                            <img src="./dist/images/profile/user-1.jpg" class="rounded-circle" width="80" height="80" alt="" />
+                            <div class="ms-3">
+                              <h5 class="mb-1 fs-3" id="profile-name"></h5>
+                              <span class="mb-1 d-block text-dark" id="role"></span>
+                              <p class="mb-0 d-flex text-dark align-items-center gap-2">
+                                <i class="ti ti-mail fs-4"></i> <span id="user-mail"></span>
+                              </p>
+                            </div>
+                          </div>
+                          <div class="message-body">
+                            <a href="./profile.html" class="py-8 px-7 mt-8 d-flex align-items-center">
+                              <span class="d-flex align-items-center justify-content-center bg-light rounded-1 p-6">
+                                <img src="./dist/images/svgs/icon-account.svg" alt="" width="24" height="24">
+                              </span>
+                              <div class="w-75 d-inline-block v-middle ps-3">
+                                <h6 class="mb-1 bg-hover-primary fw-semibold"> My Profile </h6>
+                                <span class="d-block text-dark">Account Settings</span>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="d-grid py-4 px-7 pt-8">
+                            <div class="upgrade-plan bg-light-primary position-relative overflow-hidden rounded-4 p-4 mb-9">
+                            <a href="./login.html" class="btn btn-outline-primary">Log Out</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </header>
+        <!-- Header End -->
+        <div class="container-fluid">
+            <div class="card bg-light-info shadow-none position-relative overflow-hidden">
+                <div class="card-body px-4 py-3">
+                  <div class="row align-items-center">
+                    <div class="col-9">
+                      <h4 class="fw-semibold mb-8">HelloWorld</h4>
+                      <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a class="text-muted" href="./dashboard.html">Courses</a></li>
+                          <li class="breadcrumb-item" aria-current="page">Add</li>
+                        </ol>
+                      </nav>
+                    </div>
+                    <div class="col-3">
+                      <div class="text-center mb-n5">  
+                        <img src="./dist/images/breadcrumb/ChatBc.png" alt="" class="img-fluid mb-n4">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="card card-body">
+                <h3 class="mb-3">Add a Course</h3>
+                <form class="form-horizontal" id="courseForm">
+                  <div class="mb-3">
+                    <label>Instructor Email </label>
+                    <input type="email" id="email" class="form-control" placeholder="name@helloworld.com">
+                  </div>
+                  <div class="mb-3">
+                    <label>Course Title</label>
+                    <input type="text" id="title" class="form-control" placeholder="Ex: Python Programming">
+                  </div>
+                  <div class="mb-3">
+                    <label>Course Link</label>
+                    <input type="text" id="link" class="form-control" placeholder="Youtube | Google Slides | Loom | Google Drive ....">
+                  </div>
+                  <div class="mb-3">
+                    <label>Description</label>
+                    <textarea class="form-control" rows="5" id="description"></textarea>
+                  </div>
+                  <div class="mb-3">
+                    <label>Category</label>
+                    <textarea class="form-control" rows="5" id="category"></textarea>
+                  </div>
+                  <button type="button" id="submit-btn" class="justify-content-center w-100 btn mb-1 btn-rounded btn-primary d-flex align-items-center">
+                    <i class="ti ti-send fs-4 me-2"></i>
+                    Send
+                  </button>
+                </form>
+              </div>
+        <!-- container-fluid over -->
+      </div>
+    </div>
+  <!-- Customizer -->
+   <button class="btn btn-primary p-3 rounded-circle d-flex align-items-center justify-content-center customizer-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+    <i class="ti ti-settings fs-7" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Settings"></i>
+  </button>
+  <div class="offcanvas offcanvas-end customizer" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" data-simplebar="">
+    <div class="d-flex align-items-center justify-content-between p-3 border-bottom">
+      <h4 class="offcanvas-title fw-semibold" id="offcanvasExampleLabel">Settings</h4>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body p-4">
+      <div class="theme-option pb-4">
+        <h6 class="fw-semibold fs-4 mb-1">Theme Option</h6>
+        <div class="d-flex align-items-center gap-3 my-3">
+          <a href="javascript:void(0)"  onclick="toggleTheme('./dist/css/style.min.css')"  class="rounded-2 p-9 customizer-box hover-img d-flex align-items-center gap-2 light-theme text-dark">
+            <i class="ti ti-brightness-up fs-7 text-primary"></i>
+            <span class="text-dark">Light</span>
+          </a>
+          <a href="javascript:void(0)" onclick="toggleTheme('./dist/css/style-dark.min.css')" class="rounded-2 p-9 customizer-box hover-img d-flex align-items-center gap-2 dark-theme text-dark">
+            <i class="ti ti-moon fs-7 "></i>
+            <span class="text-dark">Dark</span>
+          </a>
+        </div>
+      </div>
+      <div class="theme-direction pb-4">
+        <h6 class="fw-semibold fs-4 mb-1">Theme Direction</h6>
+        <div class="d-flex align-items-center gap-3 my-3">
+          <a href="./index.html" class="rounded-2 p-9 customizer-box hover-img d-flex align-items-center gap-2">
+            <i class="ti ti-text-direction-ltr fs-6 text-primary"></i>
+            <span class="text-dark">LTR</span>
+          </a>
+          <a href="../rtl/index.html" class="rounded-2 p-9 customizer-box hover-img d-flex align-items-center gap-2">
+            <i class="ti ti-text-direction-rtl fs-6 text-dark"></i>
+            <span class="text-dark">RTL</span>
+          </a>
+        </div>
+      </div>
+      <div class="theme-colors pb-4">
+        <h6 class="fw-semibold fs-4 mb-1">Theme Colors</h6>
+        <div class="d-flex align-items-center gap-3 my-3">
+          <ul class="list-unstyled mb-0 d-flex gap-3 flex-wrap change-colors">
+            <li class="rounded-2 p-9 customizer-box hover-img d-flex align-items-center justify-content-center">
+              <a href="javascript:void(0)" class="rounded-circle position-relative d-block customizer-bgcolor skin1-bluetheme-primary active-theme " onclick="toggleTheme('./dist/css/style.min.css')"  data-color="blue_theme" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="BLUE_THEME"><i class="ti ti-check text-white d-flex align-items-center justify-content-center fs-5"></i></a>
+            </li>
+            <li class="rounded-2 p-9 customizer-box hover-img d-flex align-items-center justify-content-center">
+              <a href="javascript:void(0)"  class="rounded-circle position-relative d-block customizer-bgcolor skin2-aquatheme-primary " onclick="toggleTheme('./dist/css/style-aqua.min.css')"  data-color="aqua_theme" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="AQUA_THEME"><i class="ti ti-check  text-white d-flex align-items-center justify-content-center fs-5"></i></a>
+            </li>
+            <li class="rounded-2 p-9 customizer-box hover-img d-flex align-items-center justify-content-center">
+              <a href="javascript:void(0)" class="rounded-circle position-relative d-block customizer-bgcolor skin3-purpletheme-primary" onclick="toggleTheme('./dist/css/style-purple.min.css')"  data-color="purple_theme" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="PURPLE_THEME"><i class="ti ti-check  text-white d-flex align-items-center justify-content-center fs-5"></i></a>
+            </li>
+            <li class="rounded-2 p-9 customizer-box hover-img d-flex align-items-center justify-content-center">
+              <a href="javascript:void(0)" class="rounded-circle position-relative d-block customizer-bgcolor skin4-greentheme-primary" onclick="toggleTheme('./dist/css/style-green.min.css')"  data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="GREEN_THEME"><i class="ti ti-check  text-white d-flex align-items-center justify-content-center fs-5"></i></a>
+            </li>
+            <li class="rounded-2 p-9 customizer-box hover-img d-flex align-items-center justify-content-center">
+              <a href="javascript:void(0)" class="rounded-circle position-relative d-block customizer-bgcolor skin5-cyantheme-primary" onclick="toggleTheme('./dist/css/style-cyan.min.css')"  data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="CYAN_THEME"><i class="ti ti-check  text-white d-flex align-items-center justify-content-center fs-5"></i></a>
+            </li>
+            <li class="rounded-2 p-9 customizer-box hover-img d-flex align-items-center justify-content-center">
+              <a href="javascript:void(0)" class="rounded-circle position-relative d-block customizer-bgcolor skin6-orangetheme-primary" onclick="toggleTheme('./dist/css/style-orange.min.css')"  data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="ORANGE_THEME"><i class="ti ti-check  text-white d-flex align-items-center justify-content-center fs-5"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="layout-type pb-4">
+        <h6 class="fw-semibold fs-4 mb-1">Layout Type</h6>
+        <div class="d-flex align-items-center gap-3 my-3">
+          <a href="./index.html" class="rounded-2 p-9 customizer-box hover-img d-flex align-items-center gap-2">              
+            <i class="ti ti-layout-sidebar fs-6 text-primary"></i>
+            <span class="text-dark">Vertical</span>
+          </a>
+          <a href="../horizontal/index.html" class="rounded-2 p-9 customizer-box hover-img d-flex align-items-center gap-2">
+            <i class="ti ti-layout-navbar fs-6 text-dark"></i>
+            <span class="text-dark">Horizontal</span>
+          </a>
+        </div>
+      </div>
+      <div class="container-option pb-4">
+        <h6 class="fw-semibold fs-4 mb-1">Container Option</h6>
+        <div class="d-flex align-items-center gap-3 my-3">
+          <a href="javascript:void(0)" class="rounded-2 p-9 customizer-box hover-img d-flex align-items-center gap-2 boxed-width text-dark">              
+            <i class="ti ti-layout-distribute-vertical fs-7 text-primary"></i>
+            <span class="text-dark">Boxed</span>
+          </a>
+          <a href="javascript:void(0)" class="rounded-2 p-9 customizer-box hover-img d-flex align-items-center gap-2 full-width text-dark">
+            <i class="ti ti-layout-distribute-horizontal fs-7"></i>
+            <span class="text-dark">Full</span>
+          </a>
+        </div>
+      </div>
+      <div class="sidebar-type pb-4">
+        <h6 class="fw-semibold fs-4 mb-1">Sidebar Type</h6>
+        <div class="d-flex align-items-center gap-3 my-3">
+          <a  href="javascript:void(0)" class="rounded-2 p-9 customizer-box hover-img d-flex align-items-center gap-2 fullsidebar">              
+            <i class="ti ti-layout-sidebar-right fs-7"></i>
+            <span class="text-dark">Full</span>
+          </a>
+          <a  href="javascript:void(0)" class="rounded-2 p-9 customizer-box hover-img d-flex align-items-center text-dark sidebartoggler gap-2">
+            <i class="ti ti-layout-sidebar fs-7"></i>
+            <span class="text-dark">Collapse</span>
+          </a>
+        </div>
+      </div>
+      <div class="card-with pb-4">
+        <h6 class="fw-semibold fs-4 mb-1">Card With</h6>
+        <div class="d-flex align-items-center gap-3 my-3">
+          <a href="javascript:void(0)" class="rounded-2 p-9 customizer-box hover-img d-flex align-items-center gap-2 text-dark cardborder">              
+            <i class="ti ti-border-outer fs-7"></i>
+            <span class="text-dark">Border</span>
+          </a>
+          <a href="javascript:void(0)" class="rounded-2 p-9 customizer-box hover-img d-flex align-items-center gap-2 cardshadow">
+            <i class="ti ti-border-none fs-7"></i>
+            <span class="text-dark">Shadow</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+        <!-- Customizer -->
+    <!-- Import Js Files -->
+    <script src="./dist/libs/jquery/dist/jquery.min.js"></script>
+    <script src="./dist/libs/simplebar/dist/simplebar.min.js"></script>
+    <script src="./dist/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- core files -->
+    <script src="./dist/js/app.min.js"></script>
+    <script src="./dist/js/app.init.js"></script>
+    <script src="./dist/js/app-style-switcher.js"></script>
+    <script src="./dist/js/sidebarmenu.js"></script>
+    <script src="./dist/js/custom.js"></script>
+    <!-- current page js files -->
+    <script src="./dist/js/dashboard2.js"></script>
+    <script>
+      const user = JSON.parse(localStorage.getItem('user'));
+      const nav = document.getElementById('sidebarnav');
+      const coursesContainer = document.getElementById('courses-container')
+      const populateData = () => {
+      const username = user.name;
+        document.getElementById('profile-name').innerText = username;
+        document.getElementById('role').innerText = user.role;
+        document.getElementById('user-mail').innerText = user.email;
+      }
+      document.addEventListener('DOMContentLoaded', async() => {
+        populateData()
+        // Dynamic nav
+        if (user.role == 'instructor') {
+        nav.innerHTML += `
+            <li class="sidebar-item">
+                <a class="sidebar-link" href="./add.html" aria-expanded="false">
+                  <span>
+                    <i class="ti ti-aperture"></i>
+                  </span>
+                  <span class="hide-menu">Add Course</span>
+                </a>
+              </li>
+        `
+      }
+    });
+    document.getElementById('submit-btn').addEventListener('click', async() => {
+        const form = document.getElementById('courseForm');
+        const data = {
+            title: form.querySelector('#title').value,
+            instructorEmail: form.querySelector('#email').value,
+            description: form.querySelector('#description').value,
+            link: form.querySelector('#link').value,
+            category: form.querySelector('#category').value,
+        }
+        await fetch('http://localhost:3000/courses/add', {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(data)
+        }).then(async (response) => {
+               const result = await response.json()
+               console.log(result)
+                if (response.status == 201) {
+                    Swal.fire({
+                    title: 'Success!',
+                    text: result.message,
+                    icon: "success",
+                    confirmButtonText: 'OK'
+                }).then(() => {  
+                     window.location.href = `./courses.html` 
+                })
+                }else {
+                    Swal.fire({
+                    title: 'Error!',
+                    text: result.message,
+                    icon: "error",
+                })
+                }
+            })
+    });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>
