@@ -401,7 +401,7 @@
           skills: form.querySelector("#skills").value,
           role: form.querySelector('#role').value
         }
-        await fetch(`http://localhost:3000/user/update/${user._id}`, {
+        await fetch(`https://hello-world-backend-0jav.onrender.com/user/update/${user._id}`, {
           method: "PUT",
           headers: {
             "Content-Type": "application/json"

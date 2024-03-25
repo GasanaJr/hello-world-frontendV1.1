@@ -352,7 +352,7 @@
               </li>
         `
       }
-        const response = await fetch(`http://localhost:3000/courses/get-courses`);
+        const response = await fetch(`https://hello-world-backend-0jav.onrender.com/courses/get-courses`);
         const result = await response.json();
         for (const course of result.courses) {
                 const cardHtml = `
@@ -399,7 +399,7 @@
         const email = document.getElementById('userEmail').value;
         const courseId = document.getElementById('selectedCourseId').value;
         try {
-            const response = await fetch(`http://localhost:3000/courses/enroll/${email}/${courseId}`, {
+            const response = await fetch(`https://hello-world-backend-0jav.onrender.com/courses/enroll/${email}/${courseId}`, {
                 method: 'POST',
             });
             const result = await response.json();

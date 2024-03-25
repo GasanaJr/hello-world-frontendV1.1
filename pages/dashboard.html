@@ -560,7 +560,7 @@
         `
         for (const course of user.courses) {
         try {
-            const courseResponse = await fetch(`http://localhost:3000/courses/course/${course}`);
+            const courseResponse = await fetch(`https://hello-world-backend-0jav.onrender.com/courses/course/${course}`);
             const courseResult = await courseResponse.json();
             if (courseResponse.ok) {
                 const course = courseResult.course;
@@ -596,12 +596,12 @@
       }
       if (user.role == 'student') {
         fetchAndDisplayUserProgress(userId);
-        const response = await fetch(`http://localhost:3000/courses/user-courses/${userId}`);
+        const response = await fetch(`https://hello-world-backend-0jav.onrender.com/courses/user-courses/${userId}`);
         const result = await response.json();
         document.getElementById('numberOfCourses').innerText = result.Courses.length;
         for (const course of result.Courses) {
         try {
-            const courseResponse = await fetch(`http://localhost:3000/courses/course/${course}`);
+            const courseResponse = await fetch(`https://hello-world-backend-0jav.onrender.com/courses/course/${course}`);
             const courseResult = await courseResponse.json();
             if (courseResponse.ok) {
                 const course = courseResult.course;
@@ -641,7 +641,7 @@
         const courseCard = e.target.closest('[data-course-id]');
         if (courseCard) {
           const courseId = courseCard.getAttribute('data-course-id');
-          await fetch(`http://localhost:3000/quizzes/quiz/${courseId}`).then(async response => {
+          await fetch(`https://hello-world-backend-0jav.onrender.com/quizzes/quiz/${courseId}`).then(async response => {
             const result = await response.json();
             if (response.status == 404) {
               Swal.fire({
@@ -679,7 +679,7 @@
   const takeQuiz = async(quizId) => {
     localStorage.setItem('quizId', quizId)
     try {
-        const response = await fetch(`http://localhost:3000/quizzes/get-quiz/${quizId}`);
+        const response = await fetch(`https://hello-world-backend-0jav.onrender.com/quizzes/get-quiz/${quizId}`);
         const data = await response.json();
         const quiz = data.Message;
 
@@ -729,7 +729,7 @@
     });
     // Send answers to the server
     try {
-        const response = await fetch('http://localhost:3000/quizzes/submit-quiz', {
+        const response = await fetch('https://hello-world-backend-0jav.onrender.com/quizzes/submit-quiz', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -758,7 +758,7 @@
 
 async function fetchAndDisplayUserProgress(userId) {
     try {
-        const response = await fetch(`http://localhost:3000/quizzes/progress/${userId}`);
+        const response = await fetch(`https://hello-world-backend-0jav.onrender.com/quizzes/progress/${userId}`);
         const progressData = await response.json();
 
         const container = document.getElementById('progress-container');
@@ -869,7 +869,7 @@ function addQuestionToModal() {
 
     // Submit payload to your backend
     try {
-        const response = await fetch('http://localhost:3000/quizzes/quiz', {
+        const response = await fetch('https://hello-world-backend-0jav.onrender.com/quizzes/quiz', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -902,7 +902,7 @@ function addQuestionToModal() {
 // Fetching All Users
 
   const fetchUsers = async () => {
-    await fetch('http://localhost:3000/user/users').then(async(response) => {
+    await fetch('https://hello-world-backend-0jav.onrender.com/user/users').then(async(response) => {
       const result = await response.json();
       const table = document.getElementById('tbody');
       const table1 = document.getElementById('tbody1');
@@ -944,7 +944,7 @@ function addQuestionToModal() {
   }
 
   const Approve = async(id) => {
-    await fetch(`http://localhost:3000/user/instructors/approve/${id}`, {
+    await fetch(`https://hello-world-backend-0jav.onrender.com/user/instructors/approve/${id}`, {
       method: "POST"
     }).then(async (response) => {
                const result = await response.json()
@@ -970,7 +970,7 @@ function addQuestionToModal() {
   }
 
   const getJobs = async() => {
-    await fetch('http://localhost:3000/user/job-listings').then(async (response) => {
+    await fetch('https://hello-world-backend-0jav.onrender.com/user/job-listings').then(async (response) => {
       const result = await response.json();
       document.getElementById('numberOfJobs').innerText = result.Message.length;
       const table = document.getElementById('tbody2');
@@ -1007,7 +1007,7 @@ function addQuestionToModal() {
       requiredSkills: requiredSkills,
       link: document.getElementById('jobLink').value
     };
-    await fetch('http://localhost:3000/user/job-listings', {
+    await fetch('https://hello-world-backend-0jav.onrender.com/user/job-listings', {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
