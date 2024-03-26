@@ -463,6 +463,17 @@
 
       // Add Dom loaded event
       document.addEventListener('DOMContentLoaded', async() => {
+        const token = localStorage.getItem('token');
+        if (!token) {
+          Swal.fire({
+            title: "Info",
+            icon: 'info',
+            text: "You must be authenticated to view this page",
+            confirmButtonText: "OK"
+          }).then(() => {
+            window.location.href = './login.html';
+          })
+        }
         populateData()
         // Dynamic nav
         if (user.role == 'admin') {
