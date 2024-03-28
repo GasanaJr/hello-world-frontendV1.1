@@ -31,7 +31,8 @@ const relevantCourses = await Course.find({
 ````
 
 ### User Profile Management
-The Platform allows users to update their profiles allowing them to put their skills and interests hence allowing them to have access to Job opportunities.
+The Platform allows users to update their profiles allowing them to put their skills and interests hence allowing them to have access to Job opportunities. This section also allows admins to remove or grant access to instructors on the platform.
+
 
 ## Usage
 
